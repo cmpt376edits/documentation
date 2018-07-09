@@ -1,0 +1,1131 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Connecting to EON with SSH · The Openpilot Documentation Project</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-noembed/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-itoc/itoc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="installing-additional-tools-ssh-windows10.html" />
+    
+    
+    <link rel="prev" href="installing-openpilot-on-eon.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation.html">
+            
+                <a href="../installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="installing-openpilot-on-eon.html">
+            
+                <a href="installing-openpilot-on-eon.html">
+            
+                    
+                    Installing Openpilot on EON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.2" data-path="connecting-to-eon-with-ssh.html">
+            
+                <a href="connecting-to-eon-with-ssh.html">
+            
+                    
+                    Connecting to EON with SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="installing-additional-tools-ssh-windows10.html">
+            
+                <a href="installing-additional-tools-ssh-windows10.html">
+            
+                    
+                    Installing Addl. Tools for SSH on Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../supported-vehicles/">
+            
+                <a href="../supported-vehicles/">
+            
+                    
+                    Supported Vehicles
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../supported-vehicles/acura/">
+            
+                <a href="../supported-vehicles/acura/">
+            
+                    
+                    Acura
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.1" data-path="../supported-vehicles/acura/ilx.html">
+            
+                <a href="../supported-vehicles/acura/ilx.html">
+            
+                    
+                    ILX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.2" data-path="../supported-vehicles/acura/rdx.html">
+            
+                <a href="../supported-vehicles/acura/rdx.html">
+            
+                    
+                    RDX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../supported-vehicles/cadillac/">
+            
+                <a href="../supported-vehicles/cadillac/">
+            
+                    
+                    Cadillac
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.2.1" data-path="../supported-vehicles/cadillac/ct6.html">
+            
+                <a href="../supported-vehicles/cadillac/ct6.html">
+            
+                    
+                    CT6
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../supported-vehicles/chevrolet/">
+            
+                <a href="../supported-vehicles/chevrolet/">
+            
+                    
+                    Chevrolet
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.1" data-path="../supported-vehicles/chevrolet/volt.html">
+            
+                <a href="../supported-vehicles/chevrolet/volt.html">
+            
+                    
+                    Volt
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../supported-vehicles/honda/">
+            
+                <a href="../supported-vehicles/honda/">
+            
+                    
+                    Honda
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.4.1" data-path="../supported-vehicles/honda/accord.html">
+            
+                <a href="../supported-vehicles/honda/accord.html">
+            
+                    
+                    Accord
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4.2" data-path="../supported-vehicles/honda/civic.html">
+            
+                <a href="../supported-vehicles/honda/civic.html">
+            
+                    
+                    Civic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4.3" data-path="../supported-vehicles/honda/cr-v.html">
+            
+                <a href="../supported-vehicles/honda/cr-v.html">
+            
+                    
+                    CR-V
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4.4" data-path="../supported-vehicles/honda/odyssey.html">
+            
+                <a href="../supported-vehicles/honda/odyssey.html">
+            
+                    
+                    Odyssey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4.5" data-path="../supported-vehicles/honda/pilot.html">
+            
+                <a href="../supported-vehicles/honda/pilot.html">
+            
+                    
+                    Pilot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4.6" data-path="../supported-vehicles/honda/ridgeline.html">
+            
+                <a href="../supported-vehicles/honda/ridgeline.html">
+            
+                    
+                    Ridgeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../supported-vehicles/lexus/">
+            
+                <a href="../supported-vehicles/lexus/">
+            
+                    
+                    Lexus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.5.1" data-path="../supported-vehicles/lexus/rx.html">
+            
+                <a href="../supported-vehicles/lexus/rx.html">
+            
+                    
+                    RX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../supported-vehicles/tesla/">
+            
+                <a href="../supported-vehicles/tesla/">
+            
+                    
+                    Tesla
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.6.1" data-path="../supported-vehicles/tesla/model-s.html">
+            
+                <a href="../supported-vehicles/tesla/model-s.html">
+            
+                    
+                    Model S
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../supported-vehicles/toyota/">
+            
+                <a href="../supported-vehicles/toyota/">
+            
+                    
+                    Toyota
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.7.1" data-path="../supported-vehicles/toyota/corolla.html">
+            
+                <a href="../supported-vehicles/toyota/corolla.html">
+            
+                    
+                    Corolla
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7.2" data-path="../supported-vehicles/toyota/prius.html">
+            
+                <a href="../supported-vehicles/toyota/prius.html">
+            
+                    
+                    Prius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7.3" data-path="../supported-vehicles/toyota/rav-4.html">
+            
+                <a href="../supported-vehicles/toyota/rav-4.html">
+            
+                    
+                    RAV-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../hardware/">
+            
+                <a href="../../hardware/">
+            
+                    
+                    Hardware
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../hardware/eon/">
+            
+                <a href="../../hardware/eon/">
+            
+                    
+                    EON
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../hardware/eon/get-an-eon.html">
+            
+                <a href="../../hardware/eon/get-an-eon.html">
+            
+                    
+                    Get an EON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../hardware/eon/installation/">
+            
+                <a href="../../hardware/eon/installation/">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="../../hardware/eon/installation/how-to-mount.html">
+            
+                <a href="../../hardware/eon/installation/how-to-mount.html">
+            
+                    
+                    How to Mount the EON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="../../hardware/eon/installation/universal-ball-mount.html">
+            
+                <a href="../../hardware/eon/installation/universal-ball-mount.html">
+            
+                    
+                    Universal Ball Mount
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../hardware/giraffe/">
+            
+                <a href="../../hardware/giraffe/">
+            
+                    
+                    Giraffe
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../hardware/giraffe/get-a-giraffe.html">
+            
+                <a href="../../hardware/giraffe/get-a-giraffe.html">
+            
+                    
+                    Get a Giraffe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../hardware/giraffe/installation/">
+            
+                <a href="../../hardware/giraffe/installation/">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.1" data-path="../../hardware/giraffe/installation/removing-giraffe-from-vehicle.html">
+            
+                <a href="../../hardware/giraffe/installation/removing-giraffe-from-vehicle.html">
+            
+                    
+                      it for whatever reason, here is a quick guide.
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../hardware/giraffe/types-of-giraffes.html">
+            
+                <a href="../../hardware/giraffe/types-of-giraffes.html">
+            
+                    
+                    Types of Giraffes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../hardware/panda/">
+            
+                <a href="../../hardware/panda/">
+            
+                    
+                    Panda
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../hardware/panda/get-a-panda.html">
+            
+                <a href="../../hardware/panda/get-a-panda.html">
+            
+                    
+                    Get a Panda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../hardware/panda/troubleshooting/">
+            
+                <a href="../../hardware/panda/troubleshooting/">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.1" data-path="../../hardware/panda/troubleshooting/panda-just-flashes-green.html">
+            
+                <a href="../../hardware/panda/troubleshooting/panda-just-flashes-green.html">
+            
+                    
+                    Panda just flashes green
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../hardware/pedal/">
+            
+                <a href="../../hardware/pedal/">
+            
+                    
+                    Pedal
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../hardware/pedal/get-a-pedal.html">
+            
+                <a href="../../hardware/pedal/get-a-pedal.html">
+            
+                    
+                    Get a Pedal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../development/">
+            
+                <a href="../../development/">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../development/releases.html">
+            
+                <a href="../../development/releases.html">
+            
+                    
+                    Future Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../documentation/">
+            
+                <a href="../../documentation/">
+            
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../documentation/contributing.html">
+            
+                <a href="../../documentation/contributing.html">
+            
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../documentation/documentation-formatting.html">
+            
+                <a href="../../documentation/documentation-formatting.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Connecting to EON with SSH</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote>
+<p><em>Last modified: Mon Jul 09 2018 04:38:49 GMT+0000 (Coordinated Universal Time)</em></p>
+</blockquote>
+<h1 id="connecting-to-eon-with-ssh">Connecting to EON with SSH</h1>
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*rs5o9T4V-YWUT5koMEBUhg.png" alt="img"></p>
+<p>Recently I&#x2019;ve noticed loads of requests for a simpler guide to getting connected to EON. The &#x201C;dashcam&#x201D; device that is capable of running OpenPilot giving supported vehicles the ability to drive semi-autonomously.</p>
+<p>Let&#x2019;s get started.</p>
+<h2 id="required-tools-on-windows">Required Tools on Windows</h2>
+<p>If you&#x2019;re on Windows, please follow my guide on installing the tools needed.
+I use pretty specific tools in the rest of this article that you may not have installed on your system.</p>
+<p>Go to guide on <a href="installing-additional-tools-ssh-windows10.html">Installing Additional Tools for Connecting to SSH on Windows 10</a></p>
+<h2 id="guide">Guide</h2>
+<h3 id="01-open-terminal--powershell">01. Open Terminal / PowerShell</h3>
+<p>On <strong>Mac</strong>: <code>CMD+SPACEBAR</code> and type <code>Terminal</code> and press <strong>Return</strong>.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*ZyRv0BkXaGwYjXkR2WdWuQ.gif" alt="img"></p>
+<p>On <strong>Windows</strong>: Press the<code>WINDOWS KEY</code> on your keyboard and type <code>PowerShell</code> and Right click the result and click <code>Run as Administrator</code> or right click the Start Menu icon and go to <code>Power Shell (Admin)</code></p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*xZRlRe01VE-CW9mvj3G5oQ.gif" alt="img"></p>
+<p>On <strong>Ubuntu</strong>: <code>CTRL+ALT+T</code></p>
+<p>You will remain in Terminal / PowerShell for the majority of this article series.</p>
+<h3 id="02-installing-the-eon-ssh-developer-key">02. Installing the EON SSH Developer Key</h3>
+<p>Visit the <a href="https://community.comma.ai/wiki/index.php/Configuring_OpenPilot" target="_blank">Configuring OpenPilot</a> page on the <a href="https://wiki.comma.ai/" target="_blank">Comma Wiki</a>.</p>
+<p>Select and Copy the entire key from the page and return back here. I&#x2019;ll wait.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*gal8aMlnmQvff65mPcFYZA.gif" alt="img"></p>
+<p>Now that you&#x2019;ve copied the key, let&#x2019;s add it to a file on your computer.</p>
+<p>Type in the following command to create the <code>.ssh</code> directory if it isn&#x2019;t already created.</p>
+<pre><code># Mac / Linux
+mkdir -p ~/.ssh/
+</code></pre><pre><code># Windows
+md ~/.ssh/
+</code></pre><blockquote>
+<p><strong>By the way&#x2026;</strong></p>
+<p> <code>~/</code> is just a shortcut for your user directory.
+On Windows: <code>C:\Users\&lt;username&gt;\</code> 
+On Mac: <code>/Users/&lt;Username&gt;</code> 
+On Linux: <code>/home/&lt;Username&gt;</code></p>
+</blockquote>
+<p>Now we need to put the key we copied from the Wiki into a new file.</p>
+<p>We can use the following command to open a new blank file for us to paste our key into:</p>
+<pre><code>vim ~/.ssh/openpilot_rsa
+</code></pre><p>Paste (CMD+V / CTRL+V) the entire contents of the PRIVATE KEY just like the animation below.</p>
+<p>After pasting it, press <code>ESC</code> on your keyboard, then type <code>:wq!</code> to save.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*0HXvLD0GYUH0CCRjhRu1yQ.gif" alt="img"></p>
+<p>The file should be saved and closed and you should now see the prompt again.</p>
+<blockquote>
+<p><strong>Special note:</strong> </p>
+<p>Mac &amp; Linux: you may have to run the following command so the machine knows the key is safe.
+<code>chmod 600 ~/.ssh/openpilot_rsa</code></p>
+</blockquote>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*qO8z-o1AuWo2NHSwABYtSg.gif" alt="img"></p>
+<h3 id="03-connecting-eon-to-wifi">03. Connecting EON to WiFi</h3>
+<p>To continue on, we must ensure your EON is connected to the same wifi network as your computer. We also need to obtain the EON&#x2019;s IP address so let&#x2019;s do this.</p>
+<p>With your EON in hand, <em>(and hopefully within the comfort of your own home or office&#x2026; no need to be in the car for this one&#x2026;)</em> tap the Settings button and scroll down to WiFi Settings.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*CxwDXtBapYQX0IdyyrN-aQ.gif" alt="img"></p>
+<p>If you <strong>aren&#x2019;t connected</strong> to the same Wifi, now is the time to go through the standard WiFi process. You know the drill&#x2026; RIGHT?</p>
+<p>If you find you <strong>are connected</strong> to the same network, click the ellipsis dots in the top right corner and click Advanced.</p>
+<p>Scroll to the bottom of that screen to find the EON&#x2019;s IP address.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*c6ch0xmIihVNK5B7kvDhCw.gif" alt="img"></p>
+<p>Now, back in the shell window on your computer. (PowerShell on Windows, Terminal on Mac / Linux).</p>
+<p>Type the following command to test that you are able to connect to your EON:</p>
+<pre><code>ping &lt;IP_ADDRESS_OF_EON&gt;
+</code></pre><p><img src="https://cdn-images-1.medium.com/max/1600/1*iGwYleitw6_7X8LK2WrlXQ.gif" alt="img"></p>
+<p>If your ping appears successful, hit <code>CTRL+C</code> after about 4 pings (if on Mac). I believe Windows only pings 4 times by default.</p>
+<p>If the pings were successful, proceed to connect to your EON by typing the following command:</p>
+<pre><code>ssh root@&lt;IP_ADDRESS_OF_EON&gt; -p 8022 -i ~/.ssh/openpilot_rsa
+</code></pre><p>After entering this command for the first time, you will likely receive a prompt for adding the unknown host to the known hosts file. Simply type yes and press enter to proceed. See an example in the animation below.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*V2RwhZQ5GOWHHQ0aSPgXxw.gif" alt="img"></p>
+<p>If you have any troubles with any of the steps above, feel free to leave a comment below or hit me up on the Comma Slack @jfrux</p>
+<h3 id="whats-next">What&#x2019;s next?</h3>
+<p>Now that you&#x2019;re connected to SSH, you can do many different tasks within your EON.</p>
+<p><a href="https://medium.com/@jfrux/comma-eon-installing-a-fork-of-openpilot-5c2b5c134b4b" target="_blank"><strong>Comma EON: Installing a Fork of OpenPilot</strong>
+<em>If your vehicle is not 100% supported by Comma, Inc. you may find yourself needing to use a slightly different version of OpenPilot rather&#x2026;</em>medium.com</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="installing-openpilot-on-eon.html" class="navigation navigation-prev " aria-label="Previous page: Installing Openpilot on EON">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="installing-additional-tools-ssh-windows10.html" class="navigation navigation-next " aria-label="Next page: Installing Addl. Tools for SSH on Windows">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Connecting to EON with SSH","level":"1.2.2.2","depth":3,"next":{"title":"Installing Addl. Tools for SSH on Windows","level":"1.2.2.3","depth":3,"path":"docs/getting-started/guides/installing-additional-tools-ssh-windows10.md","ref":"docs/getting-started/guides/installing-additional-tools-ssh-windows10.md","articles":[]},"previous":{"title":"Installing Openpilot on EON","level":"1.2.2.1","depth":3,"path":"docs/getting-started/guides/installing-openpilot-on-eon.md","ref":"docs/getting-started/guides/installing-openpilot-on-eon.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","github","alerts","chapter-fold","noembed","last-modified","download-pdf-link","itoc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"last-modified":{},"chapter-fold":{},"github":{"url":"https://github.com/openpilot-community/documentation/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"alerts":{},"noembed":{},"download-pdf-link":{"label":"Download PDF","base":"https://opc.ai/documentation/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/openpilot-community/documentation/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"itoc":{"dir":"before-first","position":"static","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Openpilot Documentation Project","gitbook":"3.2.2","description":""},"file":{"path":"docs/getting-started/guides/connecting-to-eon-with-ssh.md","mtime":"2018-07-09T04:38:49.177Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-07-09T04:40:22.892Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-noembed/scripts.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-download-pdf-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-itoc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-itoc/itoc.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
