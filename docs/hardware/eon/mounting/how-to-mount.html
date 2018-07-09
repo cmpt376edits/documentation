@@ -1,0 +1,1089 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>How to Mount the EON · The Openpilot Documentation Project</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="universal-ball-mount.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../documentation/">
+            
+                <a href="../../../documentation/">
+            
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../documentation/contributing.html">
+            
+                <a href="../../../documentation/contributing.html">
+            
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../documentation/documentation-formatting.html">
+            
+                <a href="../../../documentation/documentation-formatting.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../getting-started/">
+            
+                <a href="../../../getting-started/">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../getting-started/about-openpilot.html">
+            
+                <a href="../../../getting-started/about-openpilot.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../getting-started/installation.html">
+            
+                <a href="../../../getting-started/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../getting-started/supported-vehicles/">
+            
+                <a href="../../../getting-started/supported-vehicles/">
+            
+                    
+                    Supported Vehicles
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../../getting-started/supported-vehicles/acura/">
+            
+                <a href="../../../getting-started/supported-vehicles/acura/">
+            
+                    
+                    Acura
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1.1" data-path="../../../getting-started/supported-vehicles/acura/ilx.html">
+            
+                <a href="../../../getting-started/supported-vehicles/acura/ilx.html">
+            
+                    
+                    ILX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.1.2" data-path="../../../getting-started/supported-vehicles/acura/rdx.html">
+            
+                <a href="../../../getting-started/supported-vehicles/acura/rdx.html">
+            
+                    
+                    RDX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../../getting-started/supported-vehicles/cadillac/">
+            
+                <a href="../../../getting-started/supported-vehicles/cadillac/">
+            
+                    
+                    Cadillac
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.1" data-path="../../../getting-started/supported-vehicles/cadillac/ct6.html">
+            
+                <a href="../../../getting-started/supported-vehicles/cadillac/ct6.html">
+            
+                    
+                    CT6
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../../../getting-started/supported-vehicles/chevrolet/">
+            
+                <a href="../../../getting-started/supported-vehicles/chevrolet/">
+            
+                    
+                    Chevrolet
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.3.1" data-path="../../../getting-started/supported-vehicles/chevrolet/volt.html">
+            
+                <a href="../../../getting-started/supported-vehicles/chevrolet/volt.html">
+            
+                    
+                    Volt
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../../../getting-started/supported-vehicles/honda/">
+            
+                <a href="../../../getting-started/supported-vehicles/honda/">
+            
+                    
+                    Honda
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.4.1" data-path="../../../getting-started/supported-vehicles/honda/accord.html">
+            
+                <a href="../../../getting-started/supported-vehicles/honda/accord.html">
+            
+                    
+                    Accord
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4.2" data-path="../../../getting-started/supported-vehicles/honda/civic/">
+            
+                <a href="../../../getting-started/supported-vehicles/honda/civic/">
+            
+                    
+                    Civic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.4.2.1" data-path="../../../getting-started/supported-vehicles/honda/civic/videos.html">
+            
+                <a href="../../../getting-started/supported-vehicles/honda/civic/videos.html">
+            
+                    
+                    Videos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4.3" data-path="../../../getting-started/supported-vehicles/honda/cr-v.html">
+            
+                <a href="../../../getting-started/supported-vehicles/honda/cr-v.html">
+            
+                    
+                    CR-V
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4.4" data-path="../../../getting-started/supported-vehicles/honda/odyssey.html">
+            
+                <a href="../../../getting-started/supported-vehicles/honda/odyssey.html">
+            
+                    
+                    Odyssey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4.5" data-path="../../../getting-started/supported-vehicles/honda/pilot.html">
+            
+                <a href="../../../getting-started/supported-vehicles/honda/pilot.html">
+            
+                    
+                    Pilot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4.6" data-path="../../../getting-started/supported-vehicles/honda/ridgeline.html">
+            
+                <a href="../../../getting-started/supported-vehicles/honda/ridgeline.html">
+            
+                    
+                    Ridgeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../../../getting-started/supported-vehicles/lexus/">
+            
+                <a href="../../../getting-started/supported-vehicles/lexus/">
+            
+                    
+                    Lexus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.5.1" data-path="../../../getting-started/supported-vehicles/lexus/rx.html">
+            
+                <a href="../../../getting-started/supported-vehicles/lexus/rx.html">
+            
+                    
+                    RX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../../../getting-started/supported-vehicles/toyota/">
+            
+                <a href="../../../getting-started/supported-vehicles/toyota/">
+            
+                    
+                    Toyota
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.6.1" data-path="../../../getting-started/supported-vehicles/toyota/corolla.html">
+            
+                <a href="../../../getting-started/supported-vehicles/toyota/corolla.html">
+            
+                    
+                    Corolla
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6.2" data-path="../../../getting-started/supported-vehicles/toyota/prius.html">
+            
+                <a href="../../../getting-started/supported-vehicles/toyota/prius.html">
+            
+                    
+                    Prius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6.3" data-path="../../../getting-started/supported-vehicles/toyota/rav-4.html">
+            
+                <a href="../../../getting-started/supported-vehicles/toyota/rav-4.html">
+            
+                    
+                    RAV-4
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../../../getting-started/supported-vehicles/tesla/">
+            
+                <a href="../../../getting-started/supported-vehicles/tesla/">
+            
+                    
+                    Tesla
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.7.1" data-path="../../../getting-started/supported-vehicles/tesla/model-s.html">
+            
+                <a href="../../../getting-started/supported-vehicles/tesla/model-s.html">
+            
+                    
+                    Model S
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../development/">
+            
+                <a href="../../../development/">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../../development/releases.html">
+            
+                <a href="../../../development/releases.html">
+            
+                    
+                    Future Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Hardware
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    EON
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../what-is-it.html">
+            
+                <a href="../what-is-it.html">
+            
+                    
+                    About EON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../get-an-eon.html">
+            
+                <a href="../get-an-eon.html">
+            
+                    
+                    Get an EON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../installation.html">
+            
+                <a href="../installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Mounting
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1.4.1" data-path="how-to-mount.html">
+            
+                <a href="how-to-mount.html">
+            
+                    
+                    How to Mount the EON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4.2" data-path="universal-ball-mount.html">
+            
+                <a href="universal-ball-mount.html">
+            
+                    
+                    Universal Ball Mount
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../panda/">
+            
+                <a href="../../panda/">
+            
+                    
+                    Panda
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../panda/what-is-it.html">
+            
+                <a href="../../panda/what-is-it.html">
+            
+                    
+                    About Panda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../../panda/troubleshooting/">
+            
+                <a href="../../panda/troubleshooting/">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.2.1" data-path="../../panda/troubleshooting/panda-just-flashes-green.html">
+            
+                <a href="../../panda/troubleshooting/panda-just-flashes-green.html">
+            
+                    
+                    Panda just flashes green
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../../panda/get-a-panda.html">
+            
+                <a href="../../panda/get-a-panda.html">
+            
+                    
+                    Get a Panda
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../giraffe/">
+            
+                <a href="../../giraffe/">
+            
+                    
+                    Giraffe
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../giraffe/what-is-it.html">
+            
+                <a href="../../giraffe/what-is-it.html">
+            
+                    
+                    About Giraffe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../giraffe/types-of-giraffes.html">
+            
+                <a href="../../giraffe/types-of-giraffes.html">
+            
+                    
+                    Types of Giraffes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../../giraffe/get-a-giraffe.html">
+            
+                <a href="../../giraffe/get-a-giraffe.html">
+            
+                    
+                    Get a Giraffe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../../giraffe/installation/">
+            
+                <a href="../../giraffe/installation/">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.4.1" data-path="../../giraffe/installation/removing-giraffe-from-vehicle.html">
+            
+                <a href="../../giraffe/installation/removing-giraffe-from-vehicle.html">
+            
+                    
+                    Removing Giraffe from Vehicle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../pedal/">
+            
+                <a href="../../pedal/">
+            
+                    
+                    Pedal
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="../../pedal/what-is-it.html">
+            
+                <a href="../../pedal/what-is-it.html">
+            
+                    
+                    About Pedal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="../../pedal/get-a-pedal.html">
+            
+                <a href="../../pedal/get-a-pedal.html">
+            
+                    
+                    Get a Pedal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >How to Mount the EON</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="how-to-mount-the-eon"><a name="how-to-mount-the-eon" class="plugin-anchor" href="#how-to-mount-the-eon"><i class="fa fa-link" aria-hidden="true"></i></a>How to Mount the EON</h1>
+<p>This page contains tips and suggestions originally from <a href="https://medium.com/@jfrux/comma-eon-mounting-calibration-82806162a51" target="_blank">medium/@jfrux</a>.<br>Feel free to PR your suggestions.</p>
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*D7VvwLKID5AvOZuU-iWj5g@2x.jpeg" alt=""></p>
+<p>I know there is a <em>wealth</em> of information available on the <a href="http://wiki.comma.ai" target="_blank">Comma Wiki</a> but there are just some things that seem to be overlooked or misunderstood by some users and I want to hopefully help remedy this by getting this article out there.</p>
+<h4 id="the-problem-but-not-really"><a name="the-problem-but-not-really" class="plugin-anchor" href="#the-problem-but-not-really"><i class="fa fa-link" aria-hidden="true"></i></a>The Problem (but not really)</h4>
+<p>If you&#x2019;re like me, you probably didn&#x2019;t put much initial thought into mounting your EON. You probably mounted it initially without thought or question and then you startup EON and OP and start driving, and for one reason or another the EON is not tracking or is pulling to one side, even after &#x201C;calibration&#x201D;.</p>
+<p><em>By the way, the calibration step is mainly a safety feature to keep you from engaging openpilot while the car is not tracking lane lines and cars yet. If you ever move your EON it will need some time to realign and calibrate (without hitting Reset Calibration)</em></p>
+<p>After realizing this, they stop driving and end up in the <a href="https://slack.comma.ai" target="_blank">Comma Slack</a> channel. And other user&#x2019;s responses have always been <em>&#x201C;Well it&#x2019;s probably the yaw, or pitch or your face &#x2026; &#x201C;</em>.</p>
+<p>And the truth is, more often than not it&#x2019;s mounted just fine.<br>Stop worrying, breathe.</p>
+<p>It&#x2019;s fairly common sense and most people understand that it should be as visually straight as possible&#x2026; that&#x2019;s kind of the general idea, but the responses in Slack about &#x201C;Yaw&#x201D; and &#x201C;Pitch&#x201D; cause people to spend days doubting their purchase, as well as doubting themselves and how straight their EON is.</p>
+<h4 id="the-solution"><a name="the-solution" class="plugin-anchor" href="#the-solution"><i class="fa fa-link" aria-hidden="true"></i></a>The Solution</h4>
+<p>Eyeball it and make it as straight on and as perpendicular as you can under your mirror.</p>
+<p>Your vehicle&#x2019;s stock camera is generally centered but not always, so don&#x2019;t think that&#x2019;s the best placement or that you should concern yourself with that.</p>
+<p><strong>Things you should NOT to try:</strong></p>
+<ul>
+<li><strong>Do NOT</strong> get all technical about it. It&#x2019;s just not necessary. One way to find out if you&#x2019;re overthinking it is ask yourself: &#x201C;Do I have a ruler, measuring tape, or some other modern sophisticated measuring device in the palm of my hand?&#x201D;  If you answer yes to any of those, you&#x2019;re overthinking it.</li>
+<li><strong>Do NOT</strong> try to park your car in a street somewhere to use the lane lines as a guide. The EON will not always track the lane lines when you first get your openpilot running and you can&#x2019;t friggin&#x2019; mount it and watch the lane lines at the same time. <em>This may have been useful at one point, but it&#x2019;s just a waste and not safe.</em></li>
+<li><strong>Do NOT</strong> SSH into your device and turn on GRIDDED UI. The grid is so dense that you won&#x2019;t be able to see anything or make any real judgements on things still. <em>This may also have been useful at one point but it&#x2019;s just not that important now. It&#x2019;s clear as mud. See below.</em></li>
+</ul>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*LQYX9sqCM1cBIpVBRlV8Ew@2x.jpeg" alt=""></p>
+<p><strong>Things you SHOULD try:</strong></p>
+<ul>
+<li><strong>Do</strong> mount the EON on the correct angled bracket for your windshield. I believe Comma provides a 22deg and a 28deg. The correct mount is the one that makes the EON as vertically level to the ground as possible. As perpendicular to the ground as possible. If you were to put a bubble level on it (if you could fit it on top, as center bubbled as possible).</li>
+</ul>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*ukc6lh_1JDX46uDt7fpc9g.png" alt=""></p>
+<ul>
+<li><strong>Do</strong> try to get the EON as perpendicular (or square) with the front of your car as much as possible (eyeball it). You&#x2019;ll just have to use your best judgement and if things look fairly square then you&#x2019;re good.</li>
+</ul>
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*D7VvwLKID5AvOZuU-iWj5g@2x.jpeg" alt=""></p>
+<ul>
+<li><strong>Do</strong> get a small roll of 3M VHB double-sided gray tape with red backing. Or comparable. It&#x2019;s a foam core based double-sided tape that is very strong and heat resistance and doesn&#x2019;t gunk up like clear alternatives and doesn&#x2019;t move or jar when you bump it. It&#x2019;s also easy to remove later with a metal putty knife. <a href="http://a.co/gaQx2rM" target="_blank">http://a.co/gaQx2rM</a></li>
+</ul>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*D_FmbXRT0SIc-Pfuijqz7A.png" alt=""></p>
+<ul>
+<li><strong>Do</strong> try to get the EON as parallel with the Earth as possible. You can even carefully use a small bubble level on the top of the EON to get assurance that it&#x2019;s level. The perpendicular with the car part, (eyeball it) and as center to the window as possible (maybe even slightly left for the inward facing camera to see you.</li>
+</ul>
+<blockquote>
+<p>You should try to get your EON as perpendicular (or square) with the front of your car as much as possible and as parallel with the Earth as possible. You can even carefully use a small bubble level on the top of the EON to get assurance that it&#x2019;s level. The perpendicular with the car part, you&#x2019;ll just have to use your best judgement.</p>
+</blockquote>
+<p>My recommendation for mounting tape for the EON is this stuff, or something extremely similar. The reason I say this is that this stuff doesn&#x2019;t budge and jar the EON when you hit rough road ways. It holds very strong and doesn&#x2019;t fall off at all or melt in high temps.<a href="http://a.co/gaQx2rM" target="_blank"><strong>3M Scotch 5952 VHB Tape: 1 in. x 15 ft. (Black)</strong><br>_3M 5952 Heavy Duty Mounting VHB Tape is black, double-coated VHB adhesive tape with an acrylic foam core. A modified&#x2026;_a.co</a></p>
+<h4 id="calibration"><a name="calibration" class="plugin-anchor" href="#calibration"><i class="fa fa-link" aria-hidden="true"></i></a>Calibration</h4>
+<p>Initial calibration most likely will ever only need to be done one time.<br>After that, as long as your mount position stays the same&#x200A;&#x2014;&#x200A;OP should be able to see the lane lines and cars just fine.</p>
+<p><strong>Go on a long-ish drive</strong></p>
+<p>Sometimes it can take awhile for OP to get good at what it does.<br>It must run your roadways through its machine learning model to get really good and that usually takes like 20&#x2013;40 miles of express way driving I&#x2019;ve found. The more you drive, the better it should get in the end.</p>
+<p>I highly recommend express way driving for getting openpilot properly calibrated. Don&#x2019;t try to run OP on backroads and expect it to stay put upon initial calibration.</p>
+<p>After mounting EON, give it a few days of commuting / long driving before considering moving it again. Chances are you probably have it right the first time.</p>
+<p><strong>After repositioning EON mount</strong></p>
+<p>If you move your mount, you shouldn&#x2019;t need to recalibrate or reset calibration. Just take a nice drive on an express way and ensure openpilot is seeing lane lines and seeing the cars properly before engaging openpilot.</p>
+<p>Keep it up and it&#x2019;ll get better!</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Mounting">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="universal-ball-mount.html" class="navigation navigation-next " aria-label="Next page: Universal Ball Mount">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"How to Mount the EON","level":"1.5.1.4.1","depth":4,"next":{"title":"Universal Ball Mount","level":"1.5.1.4.2","depth":4,"path":"docs/hardware/eon/mounting/universal-ball-mount.md","ref":"docs/hardware/eon/mounting/universal-ball-mount.md","articles":[]},"previous":{"title":"Mounting","level":"1.5.1.4","depth":3,"path":"docs/hardware/eon/mounting/README.md","ref":"docs/hardware/eon/mounting/README.md","articles":[{"title":"How to Mount the EON","level":"1.5.1.4.1","depth":4,"path":"docs/hardware/eon/mounting/how-to-mount.md","ref":"docs/hardware/eon/mounting/how-to-mount.md","articles":[]},{"title":"Universal Ball Mount","level":"1.5.1.4.2","depth":4,"path":"docs/hardware/eon/mounting/universal-ball-mount.md","ref":"docs/hardware/eon/mounting/universal-ball-mount.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["edit-link","github","-search","codeblock-disable-glossary","chapter-fold","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/openpilot-community/documentation/"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"codeblock-disable-glossary":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/openpilot-community/documentation/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Openpilot Documentation Project","gitbook":"3.2.2","description":""},"file":{"path":"docs/hardware/eon/mounting/how-to-mount.md","mtime":"2018-07-09T00:40:18.518Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-07-09T00:41:48.594Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-codeblock-disable-glossary/disable-glossary.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
